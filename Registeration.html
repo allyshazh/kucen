@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+  <body1><nav>
+      <div class = "topnav">
+          <div class = "logo">
+              <img src="catBookingLogo.png" width = "150px" height = "150px"></label>
+
+      <!-- Right-sided topnav -->
+      <div class = "w3-right w3-hide-small">
+      <b><a href = "Registeration.html" class = "w3-bar-item ws-button"><i class = "fa fa-user-plus w3-text-white"></i> CREATE ACCOUNT</a>
+      <a href = "contact_us.php" class = "w3-bar-item ws-button"><i class = "fa fa-phone w3-text-white"></i> CONTACT US</a>
+      <a href = "booking.php" class = "w3-bar-item ws-button"><i class = "fa fa-folder w3-text-white"></i> BOOK APPOINTMENT</a>
+      <a href = "LogIn.html" class = "w3-bar-item ws-button"><i class = "fa fa-user-circle w3-text-white"></i> SIGN IN</a>
+      <a href = "homePage.html" class = "w3-bar-item ws-button"><i class = "fa fa-home w3-text-white"></i> HOME</a>
+      </b></div>
+      </div>
+      </div>
+</nav></body1>
+    
+<body2>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <div class="container">
+    <div class="title">Create an Account</div>
+    <div class="content">
+      <form action="Register.php" method="POST">
+
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Enter your name" name="firstname" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter your name" name="lastname" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Phone Number (60+)</span>
+            <input type="text" placeholder="Enter your contact number" name="phone" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name="password1" id="password1" placeholder="Enter your password" required>
+            <i class="bi bi-eye-slash" id="togglePassword1">
+            </i>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" name="password2" id="password2" placeholder="Confirm your password" required>
+            <i class="bi bi-eye-slash" id="togglePassword2"></i>
+          </div>
+        </div>
+
+        <div class="PasswordAlert" style="color: rgb(15, 17, 112);" id="checkPassword">
+        </div>
+
+       </div>
+  
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+
+    <script>
+      //to hide password
+      const togglePassword1 = document.querySelector('#togglePassword1');
+      const togglePassword2 = document.querySelector('#togglePassword2');
+      const password1 = document.querySelector('#password1');
+      const password2 = document.querySelector('#password2');
+ 
+      togglePassword1.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = password1.getAttribute('type') === 'password' ? 'text' : 'password';
+        password1.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.classList.toggle('bi-eye');
+      });
+
+      togglePassword2.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = password2.getAttribute('type') === 'password' ? 'text' : 'password';
+        password2.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.classList.toggle('bi-eye');
+      });
+    </script>
+
+    <script>
+      //to match password
+    function checkPasswordMatch(){
+      var password = $("#password1").val();
+      var Cpassword = $("#password2").val();
+
+      if(password != Cpassword)
+      //if password and confirm password matched.
+        $("#checkPassword").html("Password does not match");
+      else
+        $("#checkPassword").html("")
+    }
+    $(document).ready(function(){
+      $("#password2").keyup(checkPasswordMatch);
+    });
+    </script>
+  </div>
+</body2>
+
+<!-- Footer -->
+<footer>
+  <div class = "footer">
+    <div class = "footer-bottom">
+    <p style = "text-align: center;">
+    <span style = "color: #9b59b6">&copy; 2021</span>
+    <span style = "color: #71b7e6"> | KrypTech</span>
+    </p>
+    </div>
+  </div>
+  
+  </footer>
+  
+</html>
+

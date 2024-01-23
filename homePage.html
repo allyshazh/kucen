@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<head>
+    <title>Cat Hotel and Spa Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href = "catBookingStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "sliderStyle.css">
+
+</head>
+
+<body>
+    <nav>
+            <div class = "topnav">
+                <div class = "logo">
+                    <img src="Images/catBookingLogo.png" width = "150px" height = "150px"></label>
+                </div>
+            <!-- Menu topnav -->
+            <b><a href = "Registeration.html" class = "w3-bar-item ws-button"><i class = "fa fa-user-plus w3-text-white"></i> CREATE ACCOUNT</a>
+            <a href = "contact_us.php" class = "w3-bar-item ws-button"><i class = "fa fa-phone w3-text-white"></i> CONTACT US</a>
+            <a href = "booking.php" class = "w3-bar-item ws-button"><i class = "fa fa-folder w3-text-white"></i> BOOK APPOINTMENT</a>
+            <a href = "LogIn.html" class = "w3-bar-item ws-button"><i class = "fa fa-user-circle w3-text-white"></i> SIGN IN</a>
+            <a href = "homePage.html" class = "w3-bar-item ws-button"><i class = "fa fa-home w3-text-white"></i> HOME</a>
+            </b>
+            </div>
+    </nav>
+
+     <h1 style = "text-align: center; color: #9b59b6;">KLINIK HAIWAN & SURGERI SHAH ALAM</h1>
+     <h2 style = "text-align: center; color: #71b7e6;">CAT HOTEL AND SPA BOOKING SYSTEM</h2>
+
+     <div class = "container">
+
+    <!-- Slideshow container -->
+    <div class = "slideshow-container">
+    
+    <!-- Full-width images with caption text -->
+    <div class = "mySlides fade">
+        <img src = "Images/cat1.jpg" style = "width: 100%">
+        <div class = "content">
+            <h4>Book your appointment now !</h4>
+            <p>We provide range of service for your cat's need </p>
+        </div>
+    </div>
+
+    <div class = "mySlides fade">
+        <img src = "Images/cat2.jpg" style = "width: 100%">
+        <div class = "content">
+            <h4>Cat Spa & Grooming</h4>
+            <p>Allow our expert groomers to pamper your cat here ! </p>
+        </div>
+    </div>
+
+    <div class = "mySlides fade">
+        <img src = "Images/cat3.jpg" style = "width: 100%">
+        <div class = "content">
+            <h4>Happy Cat, Happy You</h4>
+            <p>Treat your cat to a spa day off, so you can go to one too </p>
+        </div>
+    </div>
+
+<!-- Next and previous buttons -->
+<a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+<a class = "next" onclick = "plusSlides(1)">&#10095;</a>
+
+    </div>
+<br>
+
+<!-- The navigations -->
+<div style = "text-align: center">
+    <span class = "dot" onclick= "currentSlide(1)"></span>
+    <span class = "dot" onclick= "currentSlide(2)"></span>
+    <span class = "dot" onclick= "currentSlide(3)"></span>
+</div>
+
+<script src = "sliderHomePage.js"></script>
+
+</div>
+
+<!-- About Us -->
+<div class = "layout">
+    <div class = "row">
+        <div class = "collumn-66">
+<div class = "info">
+    <a id = "feedback"></a>
+    <a href = "#" class = "feedback"><i</a>
+    <b><span style = "color: #9b59b6; font-size: 55px;">About   </span>
+    <span style = "color: #71b7e6; font-size: 55px">    Us !</span></b>
+
+    <br><br><span style ="color: black;">Klinik Haiwan & Surgeri Shah Alam is a Veterinary Clinic located in Shah Alam.</span>
+    <span style = "color: black;">Other than supplying medical needs for your furry friends, we also ran cat hotel business that provides services like grooming and spa.</span>
+    <span style = "color: black;">Here is a perfect place where cats go for a little escape while being monitered by our professional trainer which will spoil your cat with love and personal attention to their needs.</span>
+       
+    <!-- View Work (Another section in homepage) -->
+        <br><br><a id = "feedbackBtn"></a>
+        <br><a href = "#reviewSection" class = "feedbackBtn">What people say about Us !</a>
+</div>
+        </div>
+    </div>
+</div>
+
+<!-- Gallery -->
+<div class = "layout" style = "background-color: ghostwhite;">
+    <div class="galleryMain">
+
+        <b><span style = "color: #71b7e6; font-size: 55px;">OUR   </span>
+        <span style = "color: #9b59b6; font-size: 55px">    GALLERY</span></b>
+        <hr>
+        
+        <br>
+        <h2>P O R T F O L I O</h2>
+        
+        <br>
+        <div id="myBtnContainer">
+          <button class="galleryBtn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="galleryBtn" onclick="filterSelection('hotel')"> Hotel</button>
+          <button class="galleryBtn" onclick="filterSelection('spa')"> Spa</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="galleryRow"> 
+          <div class="column hotel">
+            <div class="galleryContent">
+            <img src="Images/galleryHotel1.jpg" alt="Hotel" style="width: 100%">
+              <h4>Max</h4>
+            </div>
+          </div>
+
+          <div class="column hotel">
+            <div class="galleryContent">
+            <img src="Images/galleryHotel2.jpg" alt="Hotel" style="width: 100%">
+              <h4>Lara</h4>
+            </div>
+          </div>
+
+          <div class="column hotel">
+            <div class="galleryContent">
+            <img src="Images/galleryHotel3.jpg" alt="Hotel" style="width: 100%">
+              <h4>Miko & Milo</h4>
+            </div>
+          </div>
+
+          <div class="column hotel">
+            <div class="galleryContent">
+            <img src="Images/galleryHotel4.jpg" alt="Hotel" style="width: 100%">
+              <h4>Timah</h4>
+            </div>
+          </div>
+
+          <div class="column hotel">
+            <div class="galleryContent">
+            <img src="Images/galleryHotel5.jpg" alt="Hotel" style="width: 100%">
+              <h4>Popy</h4>
+            </div>
+          </div>
+
+          <div class="column hotel">
+            <div class="galleryContent">
+            <img src="Images/galleryHotel6.jpg" alt="Hotel" style="width: 100%">
+              <h4>Harry</h4>
+            </div>
+          </div>
+        
+          <div class="column spa">
+            <div class="galleryContent">
+              <img src="Images/gallerySpa1.jpg" alt="Spa" style="width: 100%">
+              <h4>Rio</h4>
+            </div>
+          </div>
+
+          <div class="column spa">
+            <div class="galleryContent">
+            <img src="Images/gallerySpa2.jpg" alt="Spa" style="width: 100%">
+              <h4>Dede & Didi</h4>
+            </div>
+          </div>
+
+          <div class="column spa">
+            <div class="galleryContent">
+            <img src="Images/gallerySpa3.jpeg" alt="Spa" style="width: 100%">
+              <h4>Nini</h4>
+            </div>
+          </div>
+
+            <div class="column spa">
+            <div class="galleryContent">
+            <img src="Images/gallerySpa4.jpg" alt="Spa" style="width: 100%">
+            <h4>Marley</h4>
+          </div>
+        </div>
+
+        <!-- End Grid -->
+        </div>
+        
+        <!-- End Main -->
+        </div>
+</div>
+
+<script src="gallery.js"></script>
+
+<!-- Feedback & Review Section -->
+<div id = "reviewSection">
+<div class = "layout" style = "background-color: white;">
+    <div class = "RFrow">
+        <div style="text-align:center">
+            <b><span style = "color: #71b7e6; font-size: 45px;">REVIEW &    </span>
+            <span style = "color: #9b59b6; font-size: 45px">    FEEDBACKS !</span></b>
+            <p style = "color: black; font-size: 20px">Some of our Happy Customers !</p>
+        </div>
+    </div>
+          <div class="row">
+            <div class="column">
+                <img src="Images/KKReview.jpeg" alt="KK & Kemek" style="width:110%" onclick="myFunction(this);">
+                <br><br><b><span style = "color: #71b7e6; font-size: 20px;">Khalida    </span></b>
+                <p style = "color: #9b59b6; font-size: 15px">"Sent Kemek for the spa service and she enjoyed the session, seems calmer and approachable than before. Very well recommended !"</p>
+            </div>
+
+            <div class="column">
+              <img src="Images/NanaReview.jpeg" alt="Nana & Leo" style="width:110%" onclick="myFunction(this);">
+              <br><br><b><span style = "color: #71b7e6; font-size: 20px;">Farzana    </span></b>
+              <p style = "color: #9b59b6; font-size: 15px">"I recommend this place as a 5 star place for Leo. The spa package are affordable, my cat's fur is now much much healthier after the spa session."</p>
+            </div>
+
+            <div class="column">
+              <img src="Images/MarhaReview.jpeg" alt="Marha & Damdhan" style="width:110%" onclick="myFunction(this);">
+              <br><br><b><span style = "color: #71b7e6; font-size: 20px;">Marha    </span></b>
+              <p style = "color: #9b59b6; font-size: 15px">"It was my fifth time sending my cat here ! The fur is still smooth after 2 weeks, can you believe it ? They took great care of Damdhan knowing that she is pregnant."</p>
+            </div>
+
+            <div class="column">
+              <img src="Images/AkmalReview.jpeg" alt="Akmal & Tora" style="width:110%" onclick="myFunction(this);">
+              <br><br><b><span style = "color: #71b7e6; font-size: 20px;">Akmal    </span></b>
+              <p style = "color: #9b59b6; font-size: 15px">"Clean and nice for the cats. I chose a special package for our cat, Tora. Love their service !"</p>
+            </div>
+          </div>
+          
+          <div class="RFcontainer">
+            <span onclick = "this.parentElement.style.display = 'none' "class = "closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id = "imgtext"></div>
+          </div>
+        </div>
+</div>
+    
+<script src = "feedbackReview.js"></script>
+
+<!-- Footer -->
+<div class = "footer">
+    <a id = "myBtn"></a>
+    <a href = "#" class = "myBtn"><i class = "fa fa-caret-square-o-up" style = "color:white"></i></a>
+    
+        <div class = "footer-bottom">
+        <p style = "text-align: center;">
+        <span style = "color: #9b59b6">&copy; 2021</span>
+        <span style = "color: #71b7e6"> | KrypTech</span>
+        </p>
+        </div>
+</div>
+
+<script src="topButton.js"></script>
+
+</footer>
+
+</div>
+</body>
+</html>

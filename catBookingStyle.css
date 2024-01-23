@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap%27');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Add a background color to the top navigation */
+.topnav 
+{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.topnav .logo 
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Style the links inside the navigation bar*/
+.topnav a
+{
+    float: right;
+    color: white;
+    text-align: center;
+    text-justify: auto;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/*Change the color of links on hover*/
+.topnav a:hover
+{
+    background-color: white;
+    color:  #9b59b6;
+}
+
+/*Add a color to the active/current link*/
+.topnav a.active
+{
+    background-color: white;
+    color: #9b59b6;
+}
+
+/*Background*/
+.container
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Images/pusheenCattBG.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+/*ZigZag Layout*/
+.layout
+{
+    padding: 30px;
+}
+
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.collumn-66
+{
+    float: center;
+    width: 80%;
+    padding: 50px;
+}
+  
+@media screen and (max-width: 1000px) 
+{
+    .column-66,
+    .column-33 
+    {
+      width: 100%;
+      text-align: center;
+    }
+
+    img 
+    {
+      margin: auto;
+    }
+}
+
+/*Gallery*/
+.galleryMain 
+{
+    max-width: 1000px;
+    margin: auto;
+}
+  
+.galleryRow 
+{
+    margin: 10px -50px;
+}
+  
+/* Add padding BETWEEN each column */
+.galleryRow > .galleryColumn 
+{
+    padding: 20px;
+}
+  
+/* Create three equal columns that floats next to each other */
+.galleryColumn 
+{
+    float: left;
+    width: 100%;
+    display: none; /* Hide all elements by default */
+}
+  
+/* Clear floats after rows */ 
+.galleryRow:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Content */
+.galleryContent 
+{
+    background-color: white;
+    padding: 15px;
+}
+  
+/* The "show" class is added to the filtered elements */
+.galleryShow 
+{
+    display: block;
+}
+  
+/* Style the buttons */
+.galleryBtn
+{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color:  #9b59b6;
+    color: white;
+    cursor: pointer;
+}
+  
+.galleryBtn:hover 
+{
+    background-color: white;
+    color:  #71b7e6;
+}
+  
+.galleryBtn.active 
+{
+    background-color: #71b7e6;
+    color: white;
+}
+
+/*Feedback and Reviews*/
+/* The grid: Four equal columns that floats next to each other */
+.column 
+{
+    float: left;
+    width: 24%;
+    padding: 40px;
+    margin-right: 10px;
+}
+  
+/* Style the images inside the grid */
+.column img 
+{
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+  
+.column img:hover 
+{
+    opacity: 1;
+}
+  
+/* Clear floats after the columns */
+.RFrow:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* The expanding image container */
+.RFcontainer 
+{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+}
+  
+.RFcontainer expandedImg {vertical-align: middle;}
+  
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+/*About Us Section*/
+.info
+{
+    padding: 80px;
+    margin: 5px 0px;
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    background-color: white;
+}
+
+.info .feedbackBtn
+{
+    height: 0px;
+    width: 70%;
+    margin: 20px 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.info .feedbackBtn:hover
+{
+  transform: scale(0.5);
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.myBtn
+{
+    height:65px;
+    width: 65px;
+    bottom: 60px;
+    right: 20px;
+    margin: 35px 0;
+    position: fixed;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 30px;
+    z-index: -3000px;
+
+}
+  
+.myBtn:hover 
+{
+    transform: scale(0.8);
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+.footer
+{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    height: 80px;
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.footer .footer-bottom
+{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+
+
+
+
+
+
